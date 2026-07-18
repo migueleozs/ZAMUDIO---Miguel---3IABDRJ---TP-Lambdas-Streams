@@ -42,13 +42,9 @@ public class Partie1 {
 
 
     public static void run(List<Trip> trips) {
-        List<Trip> lAndEtrips = longAndExpensiveTrips(trips);
-        List<Trip> badTrips = badTrips(trips);
-        List<Trip> recentTrips = recentTrips(trips);
-
-        System.out.println("long and expensive trips in " + lAndEtrips);
-        System.out.println("bad trips in " + badTrips);
-        System.out.println("recent trips in " + recentTrips);
+        System.out.println("Long and expensive trips: " + longAndExpensiveTrips(trips));
+        System.out.println("Bad trips: " + badTrips(trips));
+        System.out.println("Recent trips: " + recentTrips(trips));
     }
 
 }

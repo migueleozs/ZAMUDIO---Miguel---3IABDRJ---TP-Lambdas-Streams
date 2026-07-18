@@ -42,8 +42,8 @@ public class Partie4 {
     }
 
     public static void run(List<Trip> trips) {
-        System.out.println("total revenue Sequential: " + totalRevenueSequential(trips));
-        System.out.println("total revenue Parallel: " + totalRevenueParallel(trips));
+        System.out.println("Total revenue Sequential: " + totalRevenueSequential(trips));
+        System.out.println("Total revenue Parallel: " + totalRevenueParallel(trips));
         System.out.println("Count by City Parallel: " + countByCityParallel(trips));
         System.out.println("Premium trips: " + premiumTripsParallel(trips));
     }
