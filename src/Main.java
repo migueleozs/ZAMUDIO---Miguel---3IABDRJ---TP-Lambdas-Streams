@@ -5,10 +5,10 @@ import exo.*;
 void main() {
     // List<Trip> trips = TripFactory.generateTrips(10000000);
 
-    List<Trip> trips = TripFactory.generateTrips(10);
+    List<Trip> trips = TripFactory.generateTrips(3);
 
     Partie1.run(trips);
-
+    Partie2.run(trips);
 
 
     // appeler les méthodes des exos ici
