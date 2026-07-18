@@ -17,17 +17,18 @@ public class Partie2 {
     static ToDoubleFunction<Trip> tripDuration = trip -> trip.durationMin();
 
     static public Map<String, Long> countByCity(List<Trip> trips) {
+        //Nombre de trajets par ville
         return trips.stream()
                 .collect(Collectors.groupingBy(tripCity, Collectors.counting()));
     }
 
     static public Map<String, Double> revenueByDriver(List<Trip> trips) {
+        //Revenu total par chauffeur
         return trips.stream()
                 .collect(Collectors.groupingBy(tripDriver, Collectors.summingDouble(tripPrice)));
     }
 
     static public Map<String, Double> avgDurationByCity(List<Trip> trips) {
-        // coder ici
         // durée moyenne par ville
         return trips.stream()
                 .collect(Collectors.groupingBy(tripCity, Collectors.averagingDouble(tripDuration)));
